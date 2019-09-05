@@ -3,10 +3,11 @@ import re
 from datetime import date, time, datetime, timedelta
 from operator import itemgetter
 import sys
-input_file=sys.argv[2]
+
+input_file=sys.argv[1]
 
 print ("Output #143:")
 filereader=open(input_file,"r")
 for row in filereader:
-    print row.strip()
+    print (row.strip())
 filereader.close()
